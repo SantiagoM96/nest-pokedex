@@ -1,4 +1,4 @@
-<p align="center">
+<p>
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
@@ -32,3 +32,11 @@ http://localhost:300/api/v2/seed
 
 * Mongo
 * Nest
+
+# Production Build
+1. Crear el archivo ```.env.prod```
+2. Llenar las variables de entorno de producción
+3. Crear la nueva imagen
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
